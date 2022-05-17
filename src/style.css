@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
 }
-/*
-.portada img{
-width: 100%;
-}*/
+
 #root{
     justify-content: center;
     height: 767px;
@@ -138,5 +135,38 @@ width: 100%;
 .logo{
     margin: 20px;
 }
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#031A29;
+    height: 80px;
+}
+.ajustesProfile {
+    display: flex;
+    list-style: none; 
+}
+.buttonstyle {
+    font-family: 'Suez One';
+    margin: 18px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: #FE7676;
+}
+#nameUser {
+    font-family: 'Suez One';
+    display: flex;
+    font-size: 32px;
+}
 
+.posts {
+    display: flex;
+}
+.conteinerPost {
+    display: flex;
 
+}
+.postStart{
+    font-family:Google Sans Text,Arial,Helvetica,sans-serif;
+
+}

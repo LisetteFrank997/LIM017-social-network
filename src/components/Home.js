@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-cycle
 import { onNavigate } from '../main.js';
-import { loginWithEmailPassword } from './Auth.js';
-
+import { loginWithEmailPassword} from '../FirebaseConfi/Auth.js';
 
 export const Home = () => {
   const divHome = document.createElement('div');
@@ -20,7 +19,7 @@ export const Home = () => {
   </div>
   <div class="password">
   <i class="fa-solid fa-lock"></i>
-  <input type="text" id="userPasswordLogin" placeholder="Contraseña"></imput>
+  <input type="password" id="userPasswordLogin" placeholder="Contraseña"></imput>
   </div>
   </div>
   <div class="entrar">
@@ -37,14 +36,22 @@ export const Home = () => {
 
   divHome.innerHTML = homePage;
 
-  const loginEmail = divHome.querySelector('#userEmailLogin').value;
-  const loginPassword = divHome.querySelector('#userPasswordLogin').value;
+  
   const loginS = divHome.querySelector('#startSesion');
   loginS.addEventListener('click', () => {
+   
+    const loginEmail = divHome.querySelector('#userEmailLogin').value;
+    const loginPassword = divHome.querySelector('#userPasswordLogin').value;
     loginWithEmailPassword(loginEmail, loginPassword);
   });
 
+  
   divHome.querySelector('#register').addEventListener('click', () => onNavigate('/register'));
-  divHome.querySelector('#startSesion').addEventListener('click', ()=> onNavigate('/profile'));
+ 
+  /*divHome.querySelector('#startSesion').addEventListener('click', ()=> {
+    onNavigate('/profile');
+   
+});*/
+ 
   return divHome;
 };

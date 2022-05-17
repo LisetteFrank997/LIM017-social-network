@@ -1,8 +1,8 @@
 // importamos la funcion que vamos a testear
-import { Home } from '../src/components/Home.js';
+import { SaveDataPost } from '../src/FirebaseConfi/FunctionsPost.js';
 
-describe('Home', () => {
-  it('debería ser una función', () => {
-    expect(typeof Home).toBe('function');
-  });
+describe('SaveDataPost', () => {
+  it('debería agregar un post', () => SaveDataPost('los mejores destinos para viajar', 'Estos viajes fueron geniales').then((data) => {
+    expect(data).toBe('los mejores destinos para viajar', 'Estos viajes fueron geniales');
+  }));
 });
