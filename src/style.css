@@ -161,12 +161,58 @@
 
 .posts {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px;
 }
 .conteinerPost {
     display: flex;
+    flex-direction: column;
 
+}
+.formPost{
+    margin: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .postStart{
     font-family:Google Sans Text,Arial,Helvetica,sans-serif;
+    border: 4px solid #e3cfcf;
+    border-style: groove;
+    border-radius: 33px;
+    padding: 7px;
+    margin: 6px;
+    height: 67px;
+    width: 359px;
+}
+.upPost{
+    border: 4px solid #e3cfcf;
+    border-style: groove;
+    padding: 3px;
+    border-radius: 13px;
+    color: floralwhite;
+    background: #d97570;
+}
 
+.postConteiner{
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+    background: beige;
+}
+.bodyPost{
+    padding: 7px;
+    margin: 6px;
+    height: 67px;
+    width: 359px;
+}
+.btnDelete{
+    border: 4px solid #e3cfcf;
+    border-style: groove;
+    padding: 3px;
+    border-radius: 13px;
+    color: floralwhite;
+    background: #d97570;
 }

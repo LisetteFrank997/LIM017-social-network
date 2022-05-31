@@ -1,5 +1,5 @@
 import { userSignOut, userInfo } from '../FirebaseConfi/Auth.js';
-import { SaveDataPost, GetDataPost, onGetPublication } from '../FirebaseConfi/FunctionsPost.js';
+import { saveDataPost, GetDataPost, onGetPublication, deletePublication } from '../FirebaseConfi/FunctionsPost.js';
 import { posts } from './post.js';
 
 export const profile = () => {
@@ -18,11 +18,12 @@ export const profile = () => {
     </div>
     <section class="posts">
     <h1 id="nameUser"></h1>
+    <div>
     <form class="formPost" id="post">
-    <input type="text" class="postStart" id="titlePost" placeholder="Agrega un título a tu publicación"></input>
     <input type="text" class="postStart" id="bodyPost" placeholder="Cuentanos tus aventuras"></input>
     <button id="upPost" class="upPost">Publicar</button>
     </form>
+    </div>
     <div class="conteinerPost" id="getPostUser"></div>
     </section>
     `;
@@ -33,9 +34,9 @@ export const profile = () => {
   const upPost = profileDiv.querySelector('#upPost');
   upPost.addEventListener('click', (e) => {
     e.preventDefault();
-    const titlePost = profileDiv.querySelector('#titlePost').value;
+    //const titlePost = profileDiv.querySelector('#titlePost').value;
     const bodyPost = profileDiv.querySelector('#bodyPost').value;
-    SaveDataPost(bodyPost, titlePost);
+    saveDataPost(bodyPost);
   });
 
   const showPost = profileDiv.querySelector('#getPostUser');
@@ -44,8 +45,18 @@ export const profile = () => {
     GetDataPost()
       .then(async (data) => {
         posts(data, showPost);
+        const deletebtn= showPost.querySelectorAll(".btnDelete");
+        deletebtn.forEach(btn => {
+          btn.addEventListener("click", (event) => {
+            deletePublication(event.target.dataset.id);
+
+          })
+        })
       });
   });
+
+  
+
 
   const closeSesion = profileDiv.querySelector('#signOut');
   closeSesion.addEventListener('click', () => {

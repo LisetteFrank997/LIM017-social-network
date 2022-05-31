@@ -3,7 +3,7 @@ import { Home } from './components/Home.js';
 import { profile } from './components/profile.js';
 import { Register } from './components/Register.js';
 
-const rootDiv = document.getElementById('root');
+
 
 const routes = {
   '/': Home,
@@ -11,9 +11,10 @@ const routes = {
   '/profile': profile,
 };
 
-const component = routes[window.location.pathname];
+
 
 export const onNavigate = (pathname) => {
+  const rootDiv = document.getElementById('root');
   window.history.pushState(
     {},
     pathname,
@@ -27,8 +28,11 @@ export const onNavigate = (pathname) => {
   rootDiv.appendChild(routes[pathname]());
 };
 
-window.onpopstate = () => {
+window.addEventListener("DOMContentLoaded", ()=>{
+  const rootDiv = document.getElementById('root');
+  const component = routes[window.location.pathname];
+  window.onpopstate = () => {
+    rootDiv.appendChild(component());
+  };
   rootDiv.appendChild(component());
-};
-
-rootDiv.appendChild(component());
+})

@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, updateProfile, createUserWithEmailAndPassword, sendEmailVerification, signOut, signInWithEmailAndPassword, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js';
+import { getAuth, signInWithPopup, GoogleAuthProvider, updateProfile, createUserWithEmailAndPassword, sendEmailVerification, signOut, signInWithEmailAndPassword, onAuthStateChanged } from './Firebase.js';
 import { onNavigate } from '../main.js';
 
 import { app } from './confi.js';
