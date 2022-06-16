@@ -41,6 +41,77 @@ El objetivo principal de aprendizaje de este proyecto es construir una
 [Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
 [_responsive_](https://curriculum.laboratoria.la/es/topics/css/02-responsive) (con más de una vista / página)
 en la que podamos **leer y escribir datos**.
+## LogiBri-Social Media
+Red social para personas que desean compartir sus experiencias de viajes y encontrar recomendaciones, 
+promociones, consejos y reseñas de otros usuarios.
+
+**Objetivo del producto:**
+-Busca conectar a los usuarios que comparten la pasión por los viajes. 
+-Brindarles un espacio para compartir y adquir información relevante sobre el tema en una interfaz amigable y dinámica.
+
+**Soluciones que les brindariamos a los usuarios:**
+-Un espacio para compartir ideas, reseñas,experiencias y recomendaciones.
+-Encontrar información.
+-Un espacio para interactuar, crear vinculos y encontrar personas que comparten la misma pasión.
+-Funcionalidades que ayuden a mejorar sus viajes.
+
+### Investigación UX
+Para conocer más a nuestros usuarios y desarrollar una app web que se ajuste a sus necesidades aplicamos una encuensta 
+a una muestra de 29 personas. Que nos arrojo los siguientes resultados:
+
+**USUARIOS:** Viajeros, mochileros, aventureros, jovenes adultos, independientes económicamente, que buscan ahorrar 
+en sus viajes, obtener nuevas y buenas experiencias.
+
+**-Información que buscan más los usuarios:**
+Hospedajes económicos.
+Atracciones turisticas.
+Tour o visitas guiadas(promociones, descuentos).
+Lugares para comer.
+Rutas de viaje.
+Cambio de moneda.
+Actividades extremas.
+
+**-Funcionalidades que buscan más los usuarios:**
+Tener un perfil y un muro.
+Actualizaciones en tiempo real.
+Enviar mensajes.
+Bloquear contenido o personas.
+Crear una cuenta con un número de teléfono.
+
+**-Interacciones que buscan más los usuarios:**
+Subir fotos y videos.
+Dejar comentarios.
+Publicar estados.
+Darle me gusta a publicaciones.
+Agregar amigos.
+Espacio de consulta/recomendaciones.
+
+### HISTORIAS DE USUARIO
+
+**HU1:** Yo como usuario quisiera registrarme, para tener un perfil el cual me permita acceder.
+**HU2:** Yo como usuario quisiera iniciar sesión con un correo electronico, para acceder a mi perfil.
+**HU3:** Yo como usuario quisiera iniciar sesión con Google, para para acceder a mi perfil rapidamente.
+**HU4:** Yo como usuario quisiera crear post, para subir información que yo quiero que otros vean.
+**HU5:** Yo como usuario quisiera ver los post que he creado, para saber que tipo de información he subido anteriormente.
+**HU6:** Yo como usuario quisiera borrar los post que he creado, para que otras personas no vean información que no quiero.
+
+### PROTOTIPO DE ALTA FIDELIDAD
+
+![](src/img/Phone-Signin.jpg)
+
+![](src/img/Phone-Login.jpg)
+
+![](src/img/Phone-Completedata.jpg)
+
+### RESULTADO FINAL
+
+![](src/img/logiIn.jpg)
+
+![](src/img/logiregister.jpg)
+
+![](src/img/logiperfil.jpg)
+
+
 
 ## 3. Objetivos de aprendizaje
 
